@@ -1,0 +1,14 @@
+{
+  "name": "image-carousel",
+  "version": "1.0.0",
+  "description": "Image Carousel Test",
+  "main": "carousel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "EnumaOub",
+  "license": "ISC"
+}

@@ -1,0 +1,71 @@
+
+
+:root {
+    --arrow-width: 5rem;
+    --frame-size: 25rem;
+    --circle-height: 3rem;
+}
+
+.image-carousel-frame {
+    width: var(--frame-size);
+    height:  calc(var(--frame-size) - var(--arrow-width));
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+    padding-bottom: calc(var(--circle-height) + 1rem);
+}
+
+.image-carousel-container {
+    width: calc(var(--frame-size) - var(--arrow-width));
+    height: calc(var(--frame-size) - var(--arrow-width));
+    overflow: hidden;
+}
+
+.image-carousel-container img {
+    width: calc(var(--frame-size) - var(--arrow-width));
+    height: calc(var(--frame-size) - var(--arrow-width));
+}
+
+.image-carousel-nav-arrow-left {
+    content: '\2190';
+    width: calc(var(--arrow-width) - var(--arrow-width)/2);
+    cursor: pointer;
+}
+
+.image-carousel-nav-arrow-right {
+    content: '\2192';
+    width: var(--arrow-width);
+    padding-left: 0.5rem;
+}
+
+.image-carousel-nav-arrow-right, .image-carousel-nav-arrow-left {
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: calc((var(--frame-size) - var(--arrow-width)) / 2);
+}
+
+.image-carousel-nav-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    position: absolute;
+    bottom: 0;
+    overflow: scroll;
+    width: calc(var(--frame-size) - var(--arrow-width)/2);
+    height: var(--circle-height);
+}
+
+.image-carousel-nav-circle-elem {
+    height: 1rem;
+    width: 1rem;
+    background-color: #dad7f3;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.image-carousel-nav-circle-elem.active {
+
+    background-color: #52ff7d;
+}
